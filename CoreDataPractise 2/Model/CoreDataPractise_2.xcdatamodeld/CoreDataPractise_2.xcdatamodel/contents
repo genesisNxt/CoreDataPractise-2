@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="City" representedClassName="City" syncable="YES" codeGenerationType="class">
+        <attribute name="cityName" attributeType="String"/>
+        <relationship name="parentState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="State" inverseName="city" inverseEntity="State"/>
+    </entity>
+    <entity name="State" representedClassName=".State" syncable="YES" codeGenerationType="class">
+        <attribute name="done" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="stateName" attributeType="String"/>
+        <relationship name="city" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="City" inverseName="parentState" inverseEntity="City"/>
+    </entity>
+    <elements>
+        <element name="City" positionX="-24.5859375" positionY="80.12890625" width="128" height="73"/>
+        <element name="State" positionX="-222.60546875" positionY="27.23046875" width="128" height="88"/>
+    </elements>
+</model>

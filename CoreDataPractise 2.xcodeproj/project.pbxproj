@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		4451B0CC249DD599005C55C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0CB249DD599005C55C5 /* AppDelegate.swift */; };
 		4451B0CE249DD599005C55C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0CD249DD599005C55C5 /* SceneDelegate.swift */; };
-		4451B0D0249DD599005C55C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0CF249DD599005C55C5 /* ViewController.swift */; };
+		4451B0D0249DD599005C55C5 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0CF249DD599005C55C5 /* StateViewController.swift */; };
 		4451B0D3249DD599005C55C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4451B0D1249DD599005C55C5 /* Main.storyboard */; };
 		4451B0D6249DD599005C55C5 /* CoreDataPractise_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0D4249DD599005C55C5 /* CoreDataPractise_2.xcdatamodeld */; };
 		4451B0D8249DD5A0005C55C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4451B0D7249DD5A0005C55C5 /* Assets.xcassets */; };
 		4451B0DB249DD5A0005C55C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4451B0D9249DD5A0005C55C5 /* LaunchScreen.storyboard */; };
+		4451B0E7249DD826005C55C5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0E6249DD825005C55C5 /* Constant.swift */; };
+		4451B0E9249DE52C005C55C5 /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4451B0E8249DE52C005C55C5 /* CityTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4451B0C8249DD599005C55C5 /* CoreDataPractise 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreDataPractise 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4451B0CB249DD599005C55C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4451B0CD249DD599005C55C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4451B0CF249DD599005C55C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4451B0CF249DD599005C55C5 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
 		4451B0D2249DD599005C55C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4451B0D5249DD599005C55C5 /* CoreDataPractise_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataPractise_2.xcdatamodel; sourceTree = "<group>"; };
 		4451B0D7249DD5A0005C55C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4451B0DA249DD5A0005C55C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4451B0DC249DD5A0005C55C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4451B0E6249DD825005C55C5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4451B0E8249DE52C005C55C5 /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +64,48 @@
 			children = (
 				4451B0CB249DD599005C55C5 /* AppDelegate.swift */,
 				4451B0CD249DD599005C55C5 /* SceneDelegate.swift */,
-				4451B0CF249DD599005C55C5 /* ViewController.swift */,
-				4451B0D1249DD599005C55C5 /* Main.storyboard */,
-				4451B0D7249DD5A0005C55C5 /* Assets.xcassets */,
-				4451B0D9249DD5A0005C55C5 /* LaunchScreen.storyboard */,
+				4451B0E2249DD5D9005C55C5 /* Model */,
+				4451B0E4249DD5FD005C55C5 /* View */,
+				4451B0E3249DD5EF005C55C5 /* Controller */,
+				4451B0E5249DD617005C55C5 /* Supporting Files */,
 				4451B0DC249DD5A0005C55C5 /* Info.plist */,
-				4451B0D4249DD599005C55C5 /* CoreDataPractise_2.xcdatamodeld */,
+				4451B0E6249DD825005C55C5 /* Constant.swift */,
 			);
 			path = "CoreDataPractise 2";
+			sourceTree = "<group>";
+		};
+		4451B0E2249DD5D9005C55C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4451B0D4249DD599005C55C5 /* CoreDataPractise_2.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4451B0E3249DD5EF005C55C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4451B0E8249DE52C005C55C5 /* CityTableViewController.swift */,
+				4451B0CF249DD599005C55C5 /* StateViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4451B0E4249DD5FD005C55C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4451B0D1249DD599005C55C5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4451B0E5249DD617005C55C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4451B0D7249DD5A0005C55C5 /* Assets.xcassets */,
+				4451B0D9249DD5A0005C55C5 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4451B0D0249DD599005C55C5 /* ViewController.swift in Sources */,
+				4451B0E9249DE52C005C55C5 /* CityTableViewController.swift in Sources */,
+				4451B0D0249DD599005C55C5 /* StateViewController.swift in Sources */,
 				4451B0CC249DD599005C55C5 /* AppDelegate.swift in Sources */,
+				4451B0E7249DD826005C55C5 /* Constant.swift in Sources */,
 				4451B0D6249DD599005C55C5 /* CoreDataPractise_2.xcdatamodeld in Sources */,
 				4451B0CE249DD599005C55C5 /* SceneDelegate.swift in Sources */,
 			);
